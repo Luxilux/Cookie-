@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+<!-- <header class="navbar navbar-fixed-top navbar-inverse"> -->
+      <%= %>
+       <class="nav-item"><%= link_to "Home", root_path , class: "btn btn-primary" %>
+        <% if logged_in? %>
+        
+            <%= link_to "Se déconnecter", logout_path, method: :delete, class: "btn btn-danger"  %>
+
+
+        <% else %>
+           <class="nav-item"><%= link_to "Se connecter", login_path, class: "btn btn-primary" %>
+        <% end %>
